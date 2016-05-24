@@ -1,6 +1,6 @@
 <div class="jumbotron">
-  <h1>这是首页！</h1>
-  <p>每个人都可以通过这个页面，看到自己的信息</p>
+  <h1>这是WVMS首页！</h1>
+  <p>每个人都可以通过这个页面，看到自己的注册信息</p>
   <div ng-repeat="user in users">
     <h2>{{ user.name }}</h2>
     <p ng-class="{ 'text-info': user.userRole.title === 'user', 'text-danger': user.userRole.title === 'admin' }">
