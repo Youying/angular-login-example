@@ -1,6 +1,6 @@
 <div class="jumbotron">
-  <h1>This is home!</h1>
-  <p>Everybody can access this page, the other credentials stored are:</p>
+  <h1>这是首页！</h1>
+  <p>每个人都可以通过这个页面，看到自己的信息</p>
   <div ng-repeat="user in users">
     <h2>{{ user.name }}</h2>
     <p ng-class="{ 'text-info': user.userRole.title === 'user', 'text-danger': user.userRole.title === 'admin' }">
@@ -9,13 +9,13 @@
   </div>
 </div>
 
-<h2>native json</h2>
-<p>angular provides the real json object</p>
+<h2>原始json</h2>
+<p>angular 提供真实的 json 项目</p>
 <pre>
   <code>
 {{ users | json }}
   </code>
 </pre>
 
-<h2>You can keep track of mocked http requests</h2>
-<p>Just open the console of your favourite browser and the ngMock will print out the requests as console.info.</p>
+<h2>欢迎登录WVMS获得更多的信息</h2>
+<p>欢迎您查看WVMS官方首页，了解更多关于公司的信息</p>
