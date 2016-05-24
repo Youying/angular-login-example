@@ -49,12 +49,12 @@
           <!-- Login Form -->
           <form class="navbar-form navbar-right" name="loginForm" role="login" ng-submit="loginMe()" ng-hide="ls.isLogged || !ls.doneLoading">
             <div class="form-group">
-              <input type="text" class="form-control" ng-model="login.username" name="username" placeholder="Username">
+              <input type="text" class="form-control" ng-model="login.username" name="username" placeholder="用户名">
             </div>
             <div class="form-group">
-              <input type="password" class="form-control" ng-model="login.password" name="password" placeholder="Password">
+              <input type="password" class="form-control" ng-model="login.password" name="password" placeholder="密码">
             </div>
-            <button type="submit" class="btn btn-default hidden-devices" ng-disabled="login.working">Login <i class="fa" ng-class="login.working ? 'fa-cog fa-spin' : 'fa-sign-in'"></i></button>
+            <button type="submit" class="btn btn-default hidden-devices" ng-disabled="login.working">登录 <i class="fa" ng-class="login.working ? 'fa-cog fa-spin' : 'fa-sign-in'"></i></button>
           </form>
           <!-- Spinner -->
           <button class="btn btn-default navbar-btn navbar-right" ng-hide="ls.doneLoading">
