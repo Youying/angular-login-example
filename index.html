@@ -33,16 +33,16 @@
           <!-- Navbar links -->
           <ul class="nav navbar-nav">
             <li ng-class="{ active: $state.is('app.home') }">
-              <a ui-sref="app.home">首页</a>
+              <a ui-sref="app.home">WVMS首页</a>
             </li>
             <li ng-class="{ active: $state.is('app.admin') }">
-              <a ui-sref="app.admin">Admin-Only page</a>
+              <a ui-sref="app.admin">管理员页面</a>
             </li>
             <li ng-class="{ active: $state.is('app.user') }">
-              <a ui-sref="app.user">Registered-Only page</a>
+              <a ui-sref="app.user">注册页面</a>
             </li>
             <li ng-class="{ active: $state.is('app.register') }">
-              <a ui-sref="app.register">Register <i class="fa fa-user"></i>+</a>
+              <a ui-sref="app.register">注册 <i class="fa fa-user"></i>+</a>
             </li>
           </ul>
           <!-- Right side of the navbar -->
@@ -71,17 +71,17 @@
           </form>
         </div>
         <div class="login-error" ng-class="{ 'active': login.wrong }">
-          <div class="alert alert-danger"><b>Error:</b> Server (WUT?) said your user/pass doesn't match existing users.</div>
+          <div class="alert alert-danger"><b>错误:</b> 请确认你的用户名和密码！</div>
         </div>
       </div>
       <ui-view ng-hide="doingResolve"></ui-view>
       <div class="jumbotron loading-jumbo" ng-show="doingResolve">
-        <h1><i class="fa fa-refresh fa-2x fa-spin"></i> Loading</h1>
+        <h1><i class="fa fa-refresh fa-2x fa-spin"></i>加载...</h1>
       </div>
       <!-- version footer -->
       <div class="panel panel-default">
         <div class="panel-body">
-          <a href="https://github.com/mrgamer/angular-login-example/tree/<%=version %>" target="_blank"><b>angular-login-version:</b> <%=version %></a>
+          <a href="https://github.com/mrgamer/angular-login-example/tree/<%=version %>" target="_blank"><b>WVMS</b> <%=version %></a>
         </div>
       </div>
     </div>
